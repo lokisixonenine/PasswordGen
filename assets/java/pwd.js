@@ -4,14 +4,27 @@
 - symbols: ~!@#$%^&**()-_=+[]{};':>?./,<`
 */
 
-var letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numeral = "0123456789";
-var symbols = "~!@#$%^&**()-_=+[]{};':>?./,<`";
+var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var num = "0123456789";
+var sym = "~!@#$%^&**()-_=+[]{};':>?./,<`";
 
 // assigning variables:
-var lettersbox = document.getElementById("letters");
-var numeralbox = document.getElementById("numeral");
-var symbolsbox = document.getElementById("symbols");
-var generate = document.getElementById("generate");
+var charNum = document.getElementById("charNum");
+var numBox = document.getElementById("num");
+var symBox = document.getElementById("sym");
+var submit = document.getElementById("submit");
 var clipboard = document.getElementById("clipboard");
-var password = document.getElementById("password");
+var yourPw = document.getElementById("yourPw");
+
+console.log(password(12, char));
+// function to randomize and add all of the variables together
+function password(l, characters){
+    var pwd ='';
+
+    for(var i = 0; i<l; i++){
+        pwd += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    return pwd;
+}
+
