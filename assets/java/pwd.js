@@ -8,16 +8,21 @@ var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var num = "0123456789";
 var sym = "~!@#$%^&**()-_=+[]{};':>?./,<`";
 
-// assigning variables:
-var charNum = document.getElementById("charNum");
-var numBox = document.getElementById("num");
-var symBox = document.getElementById("sym");
-var submit = document.getElementById("submit");
+// assigning variables
 var clipboard = document.getElementById("clipboard");
 var yourPw = document.getElementById("yourPw");
 
-console.log(password(12, char));
-// function to randomize and add all of the variables together
+//added eventlistener to react when generate button is clicked
+generate.addEventListener("click", function(e){
+    var password = yourPw;   
+)
+}
+
+/* this line below writes the password to the browser window but page must be loaded/
+reloaded manually. */
+// document.write(password(12, char + num + sym));
+
+// this is the function to randomize and add all of the variables together
 function password(l, characters){
     var pwd ='';
 
@@ -26,5 +31,5 @@ function password(l, characters){
     }
 
     return pwd;
+    
 }
-
