@@ -1,7 +1,7 @@
 //random password generator using upper/lower case characters, numbers, and symbols
 function random_password_generate(max, min) {
     //this set password length and strength
-    let pwStrength = document.getElementById("pword").value;
+    let pwStrength = document.getElementById("pword").value -1;
 
     //define possible values for upper case, lower case, numbers, and sybmols 
     let values = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
