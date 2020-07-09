@@ -17,4 +17,5 @@ Other Notes for coding:
 
 Application should have a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes
 Application deployed on github pages as illustrated below:
+
 ![](pass.png)
