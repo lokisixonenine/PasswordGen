@@ -16,4 +16,5 @@ User should have option to click a button to copy the password to their clipboar
 Other Notes for coding:
 
 Application should have a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes
-Application shoudld be deployed to github pages
+Application deployed on github pages as illustrated below:
+![](pass.png)
